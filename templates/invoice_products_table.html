@@ -7,7 +7,7 @@
                 <span class="header-category">{% trans "Products" context "Invoice PDF table" %}</span>
             </td>
             <td class="cell-price">
-                <span class="header-category">{% trans "Price" context "Invoice PDF table" %}</span>
+                <span class="header-category cell-price-content">{% trans "Price" context "Invoice PDF table" %}</span>
             </td>
             <td class="cell-quantity">
                 <span class="header-category">{% trans "Quantity" context "Invoice PDF table" %}</span>
@@ -20,13 +20,13 @@
         <tr class="row-product">
             <td class="cell-product">
                 <span class="normal-text">
-                    {{ product|truncatechars:35 }}
+                    {{ product|truncatechars:70 }}
                     <br />
                     SKU: {{ product.product_sku }}
                 </span>
             </td>
             <td class="cell-price">
-                <span class="normal-text">{% price product.unit_price.gross %}</span>
+                <span class="normal-text cell-price-content">{% price product.unit_price.gross %}</span>
             </td>
             <td class="cell-quantity">
                 <span class="normal-text">{{ product.quantity }}</span>

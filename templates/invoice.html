@@ -11,7 +11,7 @@
                 content: counter(page) " of " counter(pages);
                 font-style: normal;
                 font-weight: normal;
-                font-size: 13px;
+                font-size: 10px;
                 letter-spacing: 0.02em;
                 color: rgba(40, 35, 74, 0.6);
                 margin: -15px 28px 40px 0;
@@ -41,7 +41,7 @@
         .header-category {
             font-style: normal;
             font-weight: normal;
-            font-size: 13px;
+            font-size: 9px;
             letter-spacing: 0.02em;
             color: rgba(40, 35, 74, 0.6);
 
@@ -51,10 +51,9 @@
             display: block;
             color: black;
             font-weight: bold;
-
             font-style: normal;
             font-weight: bold;
-            font-size: 13px;
+            font-size: 9px;
             letter-spacing: 0.02em;
             color: #28234A;
         }
@@ -63,10 +62,15 @@
             display: block;
             font-style: normal;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 10px;
+            line-height: 15px;
             letter-spacing: 0.02em;
             padding-bottom: 5px;
             color: #28234A;
+        }
+
+        .header-invoice-information {
+            font-size: 12px;
         }
 
         .content-padded {
@@ -82,9 +86,9 @@
         }
 
         .normal-text {
-            font-size: 14px;
+            font-size: 9px;
             color: #28234A;
-            line-height: 1.7;
+            line-height: 170%;
         }
 
         .summary-row {
@@ -92,8 +96,8 @@
         }
 
         .saleor-logo {
-            height: 40px;
-            width: 117px;
+            height: 19.27px;
+            width: 58.07px;
             padding-bottom: 20px;
         }
 
@@ -115,7 +119,7 @@
         }
 
         .cell-product {
-            width: 40%;
+            width: 50%;
         }
 
         .cell-price {
@@ -123,20 +127,24 @@
             text-align: right;
         }
 
-        .cell-summary {
-            width: 70%;
-            text-align: right;
-            padding-right: 30px;
+        .cell-price-content {
+            padding-right: 84px;
         }
 
         .cell-quantity {
-            width: 20%;
+            width: 15%;
             text-align: right;
         }
 
         .cell-total-price {
-            width: 20%;
+            width: 15%;
             text-align: right;
+        }
+
+        .cell-summary {
+            width: 80%;
+            text-align: right;
+            padding-right: 30px;
         }
 
         .content-separator {
@@ -178,7 +186,7 @@
     </div>
     <div class="section-invoice-info section-right">
         <div class="content-padded">
-            <span class="header-title">
+            <span class="header-title header-invoice-information">
                 {% trans "INVOICE INFORMATION" context "Invoice PDF header" %}
             </span>
             <br />
